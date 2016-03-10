@@ -6,4 +6,5 @@ Git Commands:
 2. git add .          ——  Adds all the files in testrepo to git
 3. git commit -a      ——  Commits the changes and files to git
 4. Asks for the message for committing the files.
-5. git push           ——   Pushes the files to github.
+5. git status         ——   gives the git status. needs to check the status
+6. git push           ——   Pushes the files to github.
