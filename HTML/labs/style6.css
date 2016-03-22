@@ -1,0 +1,36 @@
+﻿.nfldocStyle
+{
+    background-color:aquamarine;
+    color:blueviolet;
+    font-family:'Century Schoolbook'
+}
+#nflFontStyle
+{
+    font-size:large;
+    font-style:oblique;
+    font-weight:500;
+}
+a
+{
+    background-color:greenyellow; 
+    text-decoration:solid
+}
+a:visited
+{
+    color:darkred;
+}
+a:hover 
+{
+            color:crimson;
+            
+}
+p{
+    background-color:greenyellow;
+    color:darkblue;
+}
+h1
+{
+    background-color:greenyellow;
+    color:darkblue;
+}
+   

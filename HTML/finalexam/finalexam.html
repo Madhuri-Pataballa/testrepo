@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Final</title>
+    <style>
+        div {
+            border-style: dashed;
+            border-width: 5px;
+            box-shadow: 10px -10px 5px green;
+            box-shadow: inset;
+            padding: 25px;
+            display: block;
+            border-radius: 50%;
+            font-size: 20px;
+            width: 250px;
+            height: 230px;
+            background-color: #E4FFAD;
+            color: green;
+            align-content: center;
+            margin-left: 400px;
+            margin-top: 150px;
+            transition: width 5s,height 5s,background-color 5s,font-size 5s;
+            animation-direction: normal;
+        }
+
+            div:hover {
+                height: 700px;
+                width: 800px;
+                font-size: 30px;
+                border: solid;
+                border-width: thin;
+                background-image: url(paris-background.jpg);
+                background-size: cover;
+                box-shadow: 10px -10px 5px #FF944D;
+                animation-name: shadowanimation;
+                animation-duration: 5s;
+                animation-fill-mode: both;
+            }
+
+        @keyframes shadowanimation {
+            0% {
+                box-shadow: 10px -10px 5px green;
+            }
+
+            75% {
+                box-shadow: 10px -10px 5px #A47B00;
+            }
+
+            100% {
+                box-shadow: 10px -10px 5px #FF944D;
+            }
+        }
+
+        #displaytext {
+            text-align: center;
+            opacity: 0;
+            color: #660033;
+            font-size: large;
+            transition: opacity 1s linear;
+            animation-direction: normal;
+        }
+
+            #displaytext:hover {
+                text-align: center;
+                opacity: 2;
+                animation-name: texthover;
+                animation-duration: 5s;
+                animation-fill-mode: both;
+            }
+
+        @keyframes texthover {
+            0% {
+                font-size: medium;
+                color: black;
+                text-shadow: 0px 0px 0px black;
+            }
+
+            50% {
+                font-size: large;
+                color: #660033;
+                text-shadow: 2px 2px 8px black;
+            }
+
+            100% {
+                font-size: 25px;
+                color: white;
+                text-shadow: 2px 2px 8px #CC0066;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: green;
+            text-shadow: 2px 2px 8px #FFAD33;
+            margin-top: 90px;
+            opacity: 5;
+        }
+
+            h1:hover {
+                text-align: center;
+                transition: opacity 5s linear;
+                text-shadow: 0.1em 0.1em 0.2em #FFAD33;
+                opacity: 0;
+            }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Welcome</h1>
+        <p id="displaytext">
+            We love the city of lights.<br />
+            Paris is the most romantic city in the world. In August the Parisians leave city for beach.
+            So in Paris you can find only the tourists. Learn more at<br />
+            <a href="http://www.paris.com">http://www.paris.com</a>
+        </p>
+
+    </div>
+</body>
+</html>

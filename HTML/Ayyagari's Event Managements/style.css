@@ -1,0 +1,136 @@
+﻿body {
+    background-image: url(background.jpg);
+    background-color: floralwhite;
+    color: black;
+    font-family: 'Baskerville Old Face';
+    font-size: large;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 350px) {
+    body {
+        font-size: small;
+    }
+
+    nav {
+        float: right;
+        width: 100px;
+        font-size: small;
+    }
+
+    h1 {
+        width: 50px;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+    h3 {
+        font-size: small;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    div {
+        font-size: small;
+    }
+
+    article {
+        font-size: small;
+    }
+
+    footer {
+        font-size: small;
+    }
+
+    aside {
+        font-size: small;
+    }
+
+    table {
+        width: auto;
+    }
+}
+
+a {
+    background-color: Gainsboro;
+    text-decoration: solid;
+}
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        background-color: thistle;
+        color: mediumvioletred;
+    }
+
+hr {
+    border-color: #DB7093;
+}
+
+h1 {
+    color: mediumvioletred;
+    font-family: 'Bradley Hand ITC';
+}
+
+h2 {
+    color: mediumvioletred;
+    font-family: 'Bradley Hand ITC';
+}
+
+h4 {
+    color: mediumvioletred;
+    font-family: 'Bradley Hand ITC';
+}
+
+h3 {
+    color: mediumvioletred;
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#footer1 {
+    text-align: center;
+}
+
+#articleindex {
+    text-align: center;
+}
+
+figcaption {
+    color: mediumvioletred;
+}
+
+#producttablecolor {
+    border: solid;
+    border-color: crimson;
+    margin-right: 200px;
+    margin-left: 130px;
+    width: 80%;
+    align-content: center;
+}
+
+#orderformstyle {
+    color: mediumvioletred;
+}
+
+::selection {
+    color: #ED1688;
+    background-color: #F6CED8;
+}
+
+p::first-letter {
+    color: mediumvioletred;
+    font-size: xx-large;
+}

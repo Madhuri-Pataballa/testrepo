@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ayyagari's Event Managements</title>
+</head>
+<body>
+    <header style="display:flex;flex-flow:column">
+        <div style="display:flex;flex-flow:row">
+            <img src="logo.png" alt="logo" style="height:150px;width:150px" />
+            <div style="display:flex;flex-flow:column">
+                <h1>Ayyagari's Event Managements</h1>
+                <h4>
+                    <b>
+                        We take your fun seriously..
+                    </b>
+
+                </h4>
+            </div>
+        </div>
+        <nav>
+
+            <div align="right">
+                <a href="index.html">HOME</a> &nbsp;
+                <a href="about.html">ABOUT US</a> &nbsp;
+                <a href="multimedia.html">GALLERY</a> &nbsp;
+                <a href="support.html">SERVICES</a> &nbsp;
+                <a href="new.html">WHAT'S NEW</a> &nbsp;
+                <a href="products.html">PRODUCTS</a> &nbsp;
+                <a href="order.html">ORDERS</a> &nbsp;
+                <a href="faq.html">FAQs</a> &nbsp;
+                <a href="jobs.html">JOBS</a> &nbsp;
+                <a href="contact.html">CONTACT US</a> &nbsp;
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <section style="display:flex;flex-flow:column">
+        <p style="text-align:left"><b><i>ORDERS...</i></b></p>
+        <article>
+            <p align="center" style="color:mediumvioletred"><i><b>Brief Description</b></i></p>
+            <p>
+                <i>
+                    We are the one that creates, organizes, and supervises every element of your event, meeting, or incentive.
+                    We will provide outstanding customer service and organize memorable events that meet quality
+                    expectations.
+
+                </i>
+            </p>
+        </article>
+    </section>
+    <form id="orderformstyle">
+        <section style="display:flex;flex-flow:column">
+            <fieldset style="border-color:#B4045F; background:linear-gradient(lightpink, white)">
+                <legend style="color:mediumvioletred">Customer's Info</legend>
+                <label for="fname1"><b> First Name :</b></label>
+                <input type="text" name="fname1" />
+                <br />
+                <br />
+                <label for="lname1"><b> Last Name :</b></label>
+                <input type="text" name="fname1" />
+                <br />
+                <br />
+                <label for="address1"><b>Address Line 1 : </b></label>
+                <input type="text" name="address1" />
+                <br />
+                <br />
+                <label for="address2"><b>Address Line 2 : </b></label>
+                <input type="text" name="address2" />
+                <br />
+                <br />
+                <label for="city">
+                    <b>City : </b>
+                    <input type="text" name="city" list="cities" />
+                </label>
+                <datalist id="cities">
+                    <option value="Redmond">
+                    <option value="Kirkland">
+                    <option value="Bellevue">
+                    <option value="Sammamish">
+                    <option value="Isshaque">
+                    <option value="Seattle">
+                    <option value="Snoqualmie">
+                    <option value="woodinville">
+                    <option value="snohomish">
+                    <option value="Everett">
+                    <option value="Linwood">
+                    <option value="Bothell">
+                </datalist>
+                <label for="state">
+                    <b>State : </b>
+                    <input type="text" name="state" list="states" />
+                </label>
+                <datalist id="states">
+                    <option value="Washington">
+                    <option value="California">
+                    <option value="NewYork">
+                    <option value="Oregon">
+                    <option value="Texas">
+                    <option value="Florida">
+                    <option value="Alaska">
+                    <option value="Virginia">
+                    <option value="Arizona">
+                    <option value="Michigan">
+                    <option value="Colorado">
+                    <option value="Utah">
+                </datalist>
+                <label for="zipcode"><b>Zip Code : </b></label>
+                <input type="number" name="zipcode" maxlength="10" />
+                <br />
+                <br />
+                <label for="email1"><b> Email : </b></label>
+                <input type="email" name="email1" />
+                <br />
+                <br />
+                <label for="telph"><b> Phone :</b></label>
+                <input type="tel" name="telph" />
+                <br />
+                <br />
+                <label for="creditcardnumber"><b> Credit-Card # :</b></label>
+                <input type="number" name="creditcardnumber" maxlength="16" />
+                <br />
+                <br />
+                <b>Credit-Card Type :</b>
+                <input type="radio" name="Credit-Card Type" id="Credit" value="VISA">VISA
+                <input type="radio" name="Credit-Card Type" id="Credit" value="AMERICAN EXPRESS">AMERICAN EXPRESS
+                <input type="radio" name="Credit-Card Type" id="Credit" value="PAYPAL">PAYPAL
+                <input type="radio" name="Credit-Card Type" id="Credit" value="MASTER CARD">MASTER CARD
+                <br />
+                <br />
+                <label for="creditcardexpiration"><b> Credit-Card Expiration Date :</b></label>
+                <input type="date" name="creditcardexpiration" />
+                <br />
+                <br />
+                <b>Additional Comments :</b>
+                <br />
+                <textarea id="textareastyle" name="comments" rows="5" cols="95">Add your Comments here..!</textarea>
+                <div style="text-align:center">
+                    <input style="background-color:#F7819F;" type="submit" name="submitbutton" value="SUBMIT" />
+                </div>
+            </fieldset>
+        </section>
+        <br />
+        <section style="display:flex;flex-flow:column">
+            <fieldset style="border-color:#B4045F">
+                <legend style="color:mediumvioletred">Products Info</legend>
+                <b>MAHENDI</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>SANGEETH</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>STAND-UP COMEDY</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>MUSICAL SHOW</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>DANCE PROGRAMS</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>SINGING PROGRAMS</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>FUN GAMES</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>FLOWER BOUQUETS</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>RETURN GIFTS</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+                <br />
+                <br />
+                <b>DECORATIVE ITEMS</b><br />
+                <input style="background-color:#F7819F" type="button" name="product" id="order" value="ORDER AGAIN">
+                <input style="background-color:#F7819F" type="button" name="product" id="track" value="TRACK PACKAGE">
+                <input style="background-color:#F7819F" type="button" name="product" id="cancle" value="CANCLE ORDER">
+                <input style="background-color:#F7819F" type="button" name="product" id="review" value="WRITE PRODUCT REVIEW">
+            </fieldset>
+        </section>
+    </form>
+    <hr />
+    <section style="display:flex;flex-flow:column">
+        <article style="background:linear-gradient(lightpink, white)">
+            <div align="center">
+                <i>
+                    <a href="index.html">HOME</a> |
+                    <a href="about.html">ABOUT US</a> |
+                    <a href="multimedia.html">GALLERY</a> |
+                    <a href="support.html">SERVICES</a> |
+                    <a href="new.html">WHAT'S NEW</a> |
+                    <a href="products.html">PRODUCTS</a> |
+                    <a href="order.html">ORDERS</a> |
+                    <a href="faq.html">FAQs</a> |
+                    <a href="jobs.html">JOBS</a> |
+                    <a href="contact.html">CONTACT US</a> |
+                </i>
+
+            </div>
+
+        </article>
+    </section>
+    <br />
+    <footer id="footer1" style="background:linear-gradient(lightpink, white); display:flex;flex-flow:column">
+        &copy;2015 Ayyagari's managements. All Rights Reserved.
+    </footer>
+</body>
+</html>

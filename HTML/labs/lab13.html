@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration Form</title>
+    <style>
+        .bodystyle {
+            background-color: #DFCCD5;
+            font-family: 'Cambria Math';
+        }
+
+        #fieldsetstyle {
+            border-color: #8A0868;
+        }
+
+        #formstyle {
+            color: #610B4B;
+            border-color: #E64848;
+        }
+
+        #textareastyle {
+            background-color: #E0A3FF;
+        }
+    </style>
+</head>
+<body class="bodystyle">
+    <header>
+        <h2 style="color:#610B4B">Registration Form</h2>
+    </header>
+    <section>
+        <form id="formstyle" action="http://itu.lewebcafe.com/sen910/form.php" method="post" enctype="application/x-www-form-urlencoded">
+            <fieldset id="fieldsetstyle">
+                <legend style="color:#610B4B">Personal Info</legend>
+
+                <label for="fname1"><b> First Name :</b></label>
+                <input type="text" name="fname1" />
+                <br />
+                <br />
+                <label for="lname1"><b> Last Name :</b></label>
+                <input type="text" name="fname1" />
+                <br />
+                <br />
+                <label for="address1"><b>Address Line 1 : </b></label>
+                <input type="text" name="address1" />
+                <br />
+                <br />
+                <label for="address2"><b>Address Line 2 : </b></label>
+                <input type="text" name="address2" />
+                <br />
+                <br />
+                <label for="city">
+                    <b>City : </b>
+                    <input type="text" name="city" list="cities" />
+                </label>
+                <datalist id="cities">
+                    <option value="Redmond">
+                    <option value="Kirkland">
+                    <option value="Bellevue">
+                    <option value="Sammamish">
+                    <option value="Isshaque">
+                    <option value="Seattle">
+                    <option value="Snoqualmie">
+                    <option value="woodinville">
+                    <option value="snohomish">
+                    <option value="Everett">
+                    <option value="Linwood">
+                    <option value="Bothell">
+                </datalist>
+                <label for="state">
+                    <b>State : </b>
+                    <input type="text" name="state" list="states" />
+                </label>
+                <datalist id="states">
+                    <option value="Washington">
+                    <option value="California">
+                    <option value="NewYork">
+                    <option value="Oregon">
+                    <option value="Texas">
+                    <option value="Florida">
+                    <option value="Alaska">
+                    <option value="Virginia">
+                    <option value="Arizona">
+                    <option value="Michigan">
+                    <option value="Colorado">
+                    <option value="Utah">
+                </datalist>
+                <label for="zipcode"><b>Zip Code : </b></label>
+                <input type="number" name="zipcode" maxlength="10" />
+                <br />
+                <br />
+                <label for="email1"><b> Email : </b></label>
+                <input type="email" name="email1" />
+                <br />
+                <br />
+                <label for="telph"><b> Phone :</b></label>
+                <input type="tel" name="telph" />
+                <br />
+                <br />
+                <label for="dob"><b> Date Of Birth :</b></label>
+                <input type="date" name="dob" id="mydob" />
+                <br />
+                <br />
+                <b>Gender :</b>
+                <input type="radio" name="gender" id="gender1" value="Male">Male
+                <input type="radio" name="gender" id="gender1" value="Female">Female
+                <br />
+                <br />
+                <label for="url"><b>Website : </b></label>
+                <input type="url" name="url" />
+                <br />
+                <br />
+                <label for="color1"><b>Choose Favourite Color : </b></label>
+                <input type="color" name="color1" />
+                <br />
+                <br />
+                <b>Add Comments</b>
+                <br />
+                <textarea id="textareastyle" name="comments" rows="5" cols="95">Add Your Comments Here..!</textarea>
+                <br />
+                <br />
+                <div style="text-align:center">
+                    <input style="background-color:#660033;" type="submit" name="submitbutton" value="SUBMIT" />&nbsp; &nbsp; &nbsp;
+                    <input style="background-color:#660033;" type="reset" name="resetbutton" value="RESET" />
+                </div>
+            </fieldset>
+        </form>
+
+    </section>
+</body>
+</html>

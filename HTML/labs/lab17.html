@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab17</title>
+    <style>
+        a {
+            color: #0B615E;
+        }
+
+        @media print {
+            a:after {
+                content: attr(href);
+            }
+        }
+
+        #hstyle {
+            color: #0B615E;
+        }
+
+        @media only screen and (min-width: 480px) {
+            body {
+                font-size: large;
+                background-color: #A9F5F2;
+                color: #08088A;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                color: black;
+                font-size: smaller;
+                background-color: #A9F5A9;
+            }
+
+            h1 {
+                font-size: smaller;
+                background-color: #A9F5A9;
+                color: forestgreen;
+            }
+
+            h2 {
+                font-size: smaller;
+                background-color: #A9F5A9;
+                color: darkgreen;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header style="display:flex; flex-flow:column">
+        <h1 id="hstyle">Wi-Fi Hotspots</h1>
+    </header>
+    <div style="display:flex; flex-flow:column">
+        <p>Reference To WIFI Hotspot :</p>
+        <a href="https://en.wikipedia.org/wiki/Hotspot_(Wi-Fi)">Wifi HotSpot</a>
+    </div>
+    <section style="display:flex; flex-flow:column">
+        <article>
+            <h2 id="hstyle">The Dangers of Evil Twin Wi-Fi Hotspots</h2>
+            <div>
+                <p style="font-size:larger">
+                    As mobile workforces grow and BYOD (Bring Your Own Device) initiatives expand across the enterprise, so does the
+                    threats associated with remote access. New attack vectors are on the rise and hotspots are
+                    becoming less safe for remote workers.
+                </p>
+                <p>
+                    An Evil Twin hotspot is a Wi-Fi access point set up by a hacker or cybercriminal.
+                    It is meant to mimic a legitimate hotspot provided by a business, such as a coffee shop
+                    that provides free Wi-Fi access to its patrons.<br />
+                    An Evil Twin hotspot mimics a legitimate hotspot in just about every way, but its intentions
+                    are more sinister in nature.<br />
+                    Hackers and/or cybercriminals create Evil Twin hotspots to allow them to both eavesdrop on
+                    network traffic and insert themselves into the data conversation between the victims and the
+                    servers that the victims access while connected to the Evil Twin hotspot.
+                </p>
+                <p>
+                    By imitating a legitimate hotspot and tricking users into connecting to it, a hacker or cybercriminal
+                    can then steal account names and passwords and redirect victims to malware sites, phishing sites, etc.
+                    The perpetrators can also view the contents of files that the victims download or upload while they are
+                    connected to the Evil Twin access point.
+                </p>
+                <p>
+                    Victims that connect to Evil Twin hotspots don't even know that they are connecting to a rogue access
+                    point because the perpetrators use the SSID (network name) of the legitimate access point. The whole
+                    experience is transparent to the victim. Most of the time the hacker allows the victims to reach their
+                    intended Internet destinations while they secretly eavesdrop on the network traffic so that they can
+                    steal the information from the victims as the victims attempt to login to their e-mail, provide credit
+                    card numbers while shopping online, etc..
+                </p>
+            </div>
+        </article>
+        <article>
+            <h2 id="hstyle">How can we Tell if we'r Connecting to an Evil Twin vs. a Legitimate Hotspot?</h2>
+            <div>
+                <p>
+                    We likely won't be able to tell whether we are connecting to a good hotspot or a bad one.
+                    Hackers will make every effort to use the same SSID name as the legitimate access point.
+                    They often go a step further and clone the MAC address of the true access point so that
+                    they will be seen as a Base Station Clone which further strengthens the illusion.
+                </p>
+                <p>
+                    The Evil Twin hotspot owner may attempt to boost his or her hotspot's signal strength so
+                    that it overpowers the legitimate one.
+                </p>
+                <p>
+                    Hackers don't have to setup a big ugly hardware-based access point to create an Evil Twin hotspot.
+                    Hackers can use hotspot emulating software that utilizes the Wi-Fi network adapter in their notebook
+                    PC as the hotspot. Having this level of portability and concealment allows them to position themselves
+                    nearer to a potential victim which may help them to overpower the signal coming from the legitimate
+                    access point.
+                </p>
+            </div>
+        </article>
+        <article>
+            <h2 id="hstyle">The best defense starts with a good Offense.</h2>
+            <div>
+                <p>
+                    Public hot spots all have one thing in common; they are open networks that are vulnerable to attacks
+                    and security breaches. Most, if not all, public hot spots do not encrypt data, allowing passwords,
+                    email messages, and other information to be intercepted by nefarious types. The best defense starts
+                    with a good offense, in this case that means educating the user or creating automated policies on
+                    devices to prevent interception.
+                </p>
+                <ul>
+                    <li>
+                        Disable WiFi adapters by default: In other words, keep Wi-Fi shut off until it is needed,
+                        change the default settings on the device to disable Wi-Fi, forcing users to turn it on when needed.
+                        That way users are kept in the know, at least when they are actively using a Wi-Fi hotspot.
+                    </li>
+                    <li>
+                        Enforce HTTPs: Simply put, HTTPs (SSL) connections are more secure than open HTTP connections and
+                        bring added protection to sessions. Requiring that any company resources are only accessed via HTTPs
+                        (or VPN) reduces the possibility of data being intercepted.
+                    </li>
+                    <li>
+                        Incorporate a local firewall: Many OSes today come with a software firewall either built-in or
+                        readily available as a download. Installing a firewall on the client device, along with enforcing
+                        antivirus policies can prevent malware from infecting devices and can stop data interception attempts
+                        by blocking suspicious traffic.
+                    </li>
+                    <li>
+                        Validate connections: Many public hot spots have multiple wireless networks and knowing which one
+                        to connect to could be the difference between a secure session, or a session that exposes critical
+                        information to interception. Luckily, some OSes incorporate hot spot profile settings, which will
+                        automatically inform the user of what wireless networks are available and what ones they can connect to.
+                        In the best case scenarios, users are automatically prompted to approve new WiFi connections, and once
+                        approved, can then assign a profile for future use.
+                    </li>
+                    <li>
+                        Use a VPN: Perhaps that is a no brainer, but many organizations still leave some applications
+                        open to non-encrypted traffic to ease mobile worker woes. However, that ease of use can come at a
+                        high price, one where data can be intercepted and corporate resources infiltrated. The simple solution
+                        here is to make sure all corporate resources can only be accessed remotely via a VPN connection.
+                        While that may require a user to log in numerous times (first into the hotspot, then into the VPN and
+                        then into the application), VPNs can protect data from interception and networks from compromise.
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <h2 id="hstyle">What can We do to Protect Ourself From Evil Twin Hotspots?</h2>
+            <div>
+                <p>
+                    There aren't a lot of ways to defend against this type of attack. You would think that wireless
+                    encryption would prevent this type of attack, but according to Watchguard, they are not an effective
+                    deterrent because Wi-Fi Protected Access (WPA) doesn't encrypt user data until after the association
+                    between the victim's network device and the access point has already been established.
+                </p>
+                <p>
+                    One of the ways suggested by the Wi-Fi Alliance to protect ourself from Evil Twin access points
+                    is to use a Virtual Private Network (VPN). Using the encrypted tunnel provided by the VPN encryption
+                    process helps to secure all traffic between your VPN-capable device and the VPN server.
+                </p>
+                <p>
+                    Virtual Private Networks (VPNs) used to be a luxury that only large corporations could afford to provide
+                    their employees, but now personal VPN services are plentiful and cheap, starting at around $5 a month.
+                </p>
+                <p>
+                    Other than avoiding open public hotspots, we can help reduce the eavesdropping risk associated with
+                    Evil Twin hotspots by only logging into our e-mail and other sites via HTTPS secured pages instead of
+                    using HTTP unencrypted. Sites such as Facebook, Gmail, and others feature HTTPS login options.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section style="display:flex; flex-flow:column">
+        <article>
+            <h2 id="hstyle">What If I have ever faced problems using Wifi Hotspot.</h2>
+            <div>
+                <p>
+                    I have used many times a Wi-Fi hotspot at Airports. But what is, I never went into trouble. <br />
+                    As, now I got to know about the risks and troubles while using WIFI HotSpot, I would rather avoid using
+                    Wifi at public places. I will TURN-OFF Automatic Wifi Connectivity.
+                </p>
+                <p>
+                    If in case I use Wifi Hotspot, I would, by only logging into my e-mail and other sites via HTTPS secured
+                    pages instead of using HTTP unencrypted.
+                </p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
