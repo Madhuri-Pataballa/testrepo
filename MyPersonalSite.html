@@ -10,53 +10,95 @@
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
     crossorigin="anonymous">
     
+    <link rel="stylesheet" type="text/css" href="mps-style.css">
+    
     <title> Personal Resume </title>
     
-    <style>
-        .introbckgrd{
-            background-image: url(intro-background-img.jpg);
-            height: 700px;
-        }
-        .introname{
-            color: White;
-            font-family: Arial-black;
-        }
-        .nav{
-            float: right;
-            font-size: large;
-            
-        }
-     
-    </style>
 </head>
 <body>
-    <div class="container-fluid introbckgrd">
-        <header>
-        <div>
-            <h1 style="color: White"> Welcome </h1>
-            </div>
-            <div>
-                <nav class="nav">
-                  <a href="#"><strong>HOME</strong></a> &nbsp 
-                  <a href="#"><strong>PROFILE</strong></a> &nbsp 
-                  <a href="#"><strong>PORTFOLIO</strong></a> &nbsp 
-                  <a href="#"><strong>MY STRENGTH</strong></a> &nbsp 
-                  <a href="#"><strong>RESUME</strong></a> &nbsp 
-                  <a href="#"><strong>SKILLS</strong></a> &nbsp 
-                </nav>
-                </div>
-        </header>
-        <hr>
-        <section align="center" style="padding: 140px;">
-            <article style="align: center">
-        <div class="introname">
-            <h1> I'm Madhuri Pataballa </h1>
-            <h1 style="font-family: Times"> Creative UX Designer </h1> 
-            </div>
-            <div style="padding: 20px;">
-            <button class="btn btn-primary" style="color: White"><b> KNOW ME BETTER </b></button>
-            </div>
+     <div class="container-fluid intropg">   
+        <section>
+            <article>
+                 <div class="h1intropg">
+                     <h1> I'm Madhuri Pataballa </h1>
+                     <h1><strong> Creative UX Designer </strong></h1> 
+                 </div>
+                 <div class="kmb">
+                    <a href="#PROFILE" class="anchrkmb">
+                        <button class=" btn btn-lg" style="background-color: #8A0829"> <b>KNOW ME BETTER</b></button>
+                    </a>
+                 </div>
             </article>
         </section>
-    </div>
+        </div>
+        
+        <!--HOME PAGE ENDS-->
+        <!--NAV BAR STARTS-->
+        
+        <section>
+            <article>
+             <div class="mainmenu">
+                <nav class="nav navbar page-scroll">
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-10">
+                            <div class="col-xs-2">
+                                <a href="#"><strong>HOME</a></strong>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="#PROFILE"><strong>PROFILE</a></strong>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="#PORTFOLIO"><strong>PORTFOLIO</strong></a>
+                            </div>                            
+                            <div class="col-xs-2">
+                                <a href="#RESUME"><strong>RESUME</strong></a>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="#SKILLS"><strong>SKILLS</strong></a>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="#CONTACT"><strong>CONTACT</strong></a>
+                            </div>
+                        </div>
+                    </div>   
+                </nav>
+             </div>  
+            </article>
+        </section>
+        
+        <!--NAV BAR ENDS-->
+        <!--PROFILE PAGE STARTS-->
+        
+        <section>
+            <article>
+                <div class="container section-wrapper">
+                    <div class="row">
+                        <div class="col-md-5 match-height">
+                            <img src="profile-pic.jpeg" alt="profilepic" class="img-responsive prfimg">
+                            <h4 class="title">UX DESIGNER</h4>
+                        </div>
+                        
+                        <!-- PROFILE PIC ENDS-->
+                        
+                        <div class="col-md-7 match-height">
+                            <div class="padding-left-yes">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                            <h2>Madhuri Pataballa.</h2>
+                                            <p>
+                                                Madhu Pataballa, born and grew up in India. Highly motivated creative 
+                                                developer.
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>    
+            </article>
+        </section>
 </body>
